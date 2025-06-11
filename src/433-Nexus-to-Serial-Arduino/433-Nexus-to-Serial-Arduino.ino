@@ -281,7 +281,7 @@ void evaluateBitSeries(){
                           Serial.println(ftemp);
                       }
           
-                      uint8_t channel = ((lval >>  24) & 0x2);  // 0x2 bitmask for 2 bits
+                      uint8_t channel = ((lval >>  24) & 0x3);  // 0x3 bitmask for 2 bits
                       
                       if (debug){
                           Serial.print("Channel: ");
